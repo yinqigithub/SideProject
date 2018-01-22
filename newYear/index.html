@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html >
+<head>
+<title>新年活动</title>
+ <meta charset='utf-8'>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+ <meta name="renderer" content="webkit">
+ <meta name="viewport" content="width=320,maximum-scale=2,user-scalable=no">  
+ <script src="js/jquery.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="css/index.css" />
+ <script type="text/javascript" src="https://res.wx.qq.com/open/libs/weuijs/1.1.3/weui.min.js"></script>
+</head>
+<body>
+	<div id="index">
+		<div class="index-light"></div>
+		
+		<div class="index-bg">
+			<div class="index-fish"></div>
+		</div>
+		<div class="index-btn">
+				<input id="uploaderInput" class="uploader-input" type="file" accept="image/*" capture="camera" multiple="" />
+			</div>
+		</div>
+	</div>
+</body>
+ 
+<script>
+	$("#index").height($(window).height());
+	$(".index-bg").height($(window).width()*1.7786667);
+	function goRes() {
+		alert("上传图片函数");
+	}
+</script>
+</html>
