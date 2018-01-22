@@ -1,0 +1,112 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	text-decoration: none;
+	list-style: none;
+}
+
+@media screen and (max-width: 750px){ 
+	html{font-size:30px;} 
+} 
+
+@media screen and (min-width:640px) and (max-width:749px){ 
+	html{font-size:25px; } 
+}
+
+@media screen and (min-width:480px) and (max-width:639px){ 
+	html{font-size:20px; } 
+} 
+
+@media screen and (min-width:320px) and (max-width:479px){
+	html{font-size:15px; } 
+}
+
+
+#index {
+	width: 100%;
+	background: url(../img/index.png) no-repeat;
+	background-size: 100%; 
+	position: relative;
+	overflow: hidden;
+}
+
+.index-btn {
+	position: absolute;
+	height: 4rem;
+	width: 13rem;
+	bottom: 1.3rem;
+	left: 50%;
+	margin-left: -6.5rem;
+	background: url(../img/index_btn.png) no-repeat;
+	background-size: 100%; 
+}
+
+.uploader-input {
+	position: absolute;
+	height: 4rem;
+	width: 13rem;
+	opacity: 0;
+}
+
+.index-light {
+	position: absolute;
+	background: url(../img/index_light.png) no-repeat;
+	background-size: 100%; 
+	height: 5.5rem;
+	width: 5.5rem;
+	left: -2.75rem;
+	-webkit-transform: rotate(360deg);
+	animation: ligth-rot 3s linear infinite;
+	-moz-animation: ligth-rot 3s linear infinite;
+	-webkit-animation: ligth-rot 3s linear infinite;
+	-o-animation: ligth-rot 3s linear infinite;
+}
+
+@-webkit-keyframes ligth-rot{
+	0% {
+		-webkit-transform: rotate(0deg);
+		-webkit-transform-origin: center 0;/*定义动画的旋转中心点*/
+	}
+	50% {
+		-webkit-transform: rotate(-30deg);
+		-webkit-transform-origin: center 0;/*定义动画的旋转中心点*/
+	}
+	100% {
+		-webkit-transform: rotate(0deg);
+		-webkit-transform-origin: center 0;/*定义动画的旋转中心点*/
+	}
+}
+
+.index-bg {
+	width: 100%;
+	position: relative;
+}
+.index-fish {
+	position: absolute;
+	background: url(../img/index_fish.png) no-repeat;
+	background-size: 100%; 
+	height: 9rem;
+	width: 2.8rem;
+	left: 29.5%;
+	top: 62%;
+	-webkit-transform: rotate(360deg);
+	animation: fish-rot 4s linear infinite;
+	-moz-animation: fish-rot 4s linear infinite;
+	-webkit-animation: fish-rot 4s linear infinite;
+	-o-animation: fish-rot 4s linear infinite;
+}
+
+@-webkit-keyframes fish-rot{
+	0% {
+		-webkit-transform: rotate(20deg);
+		-webkit-transform-origin: center 0;/*定义动画的旋转中心点*/
+	}
+	50% {
+		-webkit-transform: rotate(-20deg);
+		-webkit-transform-origin: center 0;/*定义动画的旋转中心点*/
+	}
+	100% {
+		-webkit-transform: rotate(20deg);
+		-webkit-transform-origin: center 0;/*定义动画的旋转中心点*/
+	}
+}
